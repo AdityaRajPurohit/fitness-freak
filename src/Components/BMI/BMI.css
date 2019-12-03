@@ -1,0 +1,10 @@
+.bmi-div {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  padding-top: 2.5%;
+  height: 100vh;
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
