@@ -16,3 +16,19 @@
   display: flex;
   justify-content: center;
 }
+
+.box {
+  /* background-color: black; */
+  width: 90%;
+  margin: auto;
+  /* overflow: scroll; */
+}
+
+.row {
+  display: flexbox;
+  /* width: 30%; */
+  margin: 20px;
+}
+.newsResults {
+  widows: 40px;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './Recipe.css';
 import Recipe from './Api.js';
-
+import './recipe.module.css'
 const App = () => {
 
     const APP_ID = "b1dd83d8";
@@ -10,9 +10,7 @@ const App = () => {
     const [search, setSearch] = useState("");
     const [query, setQuery] = useState('chicken');
 
-    useEffect(() => {
-        getRecipes();
-    }, [query]);
+
 
     const getRecipes = async () => {
         const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
@@ -29,9 +27,13 @@ const App = () => {
         setQuery(search);
         setSearch('');
     }
+    useEffect(() => {
+        getRecipes();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [query]);
 
     return (
-        <div className="App">
+        <div className="recipe-box">
             <form onSubmit={getSearch} className="search-form">
                 <input className="search-bar" type="text" value={search} onChange={upadateSearch} />
                 <button className="search-button" type="submit">Search</button>

@@ -6,19 +6,25 @@ export default class BMI extends Component {
         var weight = document.getElementById('weight').value;
         var height = document.getElementById('height').value;
         //Height ko meter me convert karne ke liye
-        height = height * 12;
-        height = height * 0.025;
-        var newbmivalue = weight / (height * height);
-        newbmivalue = Math.round(newbmivalue);
+        console.log(height, " ", weight);
+        height = height / 3.281;
+        // weight = weight * 0.025;
 
+        var newbmivalue = weight / (height * height);
+        console.log(newbmivalue)
+        newbmivalue = Math.round(newbmivalue);
+        console.log(newbmivalue)
         document.getElementById('bmivalue').value = newbmivalue;
+        setTimeout(() => {
+            console.log("we waited 204586560000 ms to run this code, oh boy wowwoowee!");
+        }, 10000);
         return false;
     }
     render() {
         return (
             <div className="bmi-div">
                 <div className="container">
-                    
+
                     <div className=" text-center">BMI Calculator</div>
                     <div className="card-body">
 
@@ -33,7 +39,7 @@ export default class BMI extends Component {
                             </div>
                             <div className="form-group">
                                 <label>BMI Value</label>
-                                <input type="number" name="" id="bmivalue" className="form-control" />
+                                <input type="number" name="BMI Value" id="bmivalue" className="form-control" />
                             </div>
                             <div className="button">
                                 <button type="submit" className="btn btn-success ">Check BMI</button>

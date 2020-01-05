@@ -1,5 +1,9 @@
-.App {
+.recipe-box {
   min-height: 100vh;
+  margin: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: transparent;
   /* background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%); */
 }
 .search-form {
@@ -9,9 +13,10 @@
   align-items: center;
 }
 .search-bar {
-  width: 50%;
+  width: 70vh;
   border: none;
   padding: 10px;
+  margin: 20px;
 }
 .search-button {
   background: lightcoral;
@@ -23,4 +28,5 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 20px;
 }

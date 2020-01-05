@@ -5,9 +5,9 @@ export default class News extends Component {
     render() {
         return (
 
-            <div>
-                <div className="container">
-                    <h4>Welcome To Fitness Freak Health News</h4>
+            <div className="box d-flex flex-column justify-content-around">
+                <div >
+                    <h4 className="teal-text">Welcome To Fitness Freak Health News</h4>
                     <div className="row">
                         <div id="newsResults" />
                     </div>

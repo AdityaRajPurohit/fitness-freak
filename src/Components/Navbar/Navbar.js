@@ -7,7 +7,7 @@ import { NavLink, BrowserRouter } from 'react-router-dom';
 export default class Navbar extends Component {
     render() {
         return (
-            <div className="Nav-container">
+            <div className="Nav-container shadow-lg">
                 <header>
                     <div className="logo-container">
                         <img className="logo" src={logo} alt="logo" />
@@ -35,7 +35,7 @@ export default class Navbar extends Component {
                                 </NavLink>
                                 <NavLink to="/Recipe">
                                     <li className="nav-link"  >
-                                        Recipe
+                                        Nutrition
                                     </li>
                                 </NavLink>
                                 <NavLink to="/Signin">

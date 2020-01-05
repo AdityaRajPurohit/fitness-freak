@@ -1,6 +1,7 @@
 import 'materialize-css';
-import  'react-materialize';
+import 'react-materialize';
 import $ from 'jquery';
+import './News.css'
 $(document).ready(function () {
 
   let url = "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=dd4825d4db7b4da788a1cc422d733681";
